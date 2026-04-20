@@ -1,10 +1,63 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My First Site </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome Page</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f2f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            text-align: center;
+            background: white;
+            padding: 3rem;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #1a73e8;
+            margin-bottom: 10px;
+        }
+        p {
+            color: #5f6368;
+            font-size: 1.2rem;
+        }
+        .btn {
+            margin-top: 20px;
+            padding: 10px 25px;
+            background-color: #1a73e8;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+        }
+        .btn:hover {
+            background-color: #1557b0;
+        }
+    </style>
 </head>
 <body>
-    <h1>Hello Sharvari 👋</h1>
-    <p>This is my first website</p>
+
+    <div class="container">
+        <h1>Hello there! 👋</h1>
+        <p>Welcome to my simple website. It's great to see you here today.</p>
+        <a href="#" class="btn" onclick="sayHello()">Click for a surprise</a>
+    </div>
+
+    <script>
+        function sayHello() {
+            alert("Hope you're having a fantastic day!");
+        }
+    </script>
+
 </body>
 </html>
